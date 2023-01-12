@@ -5,111 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que horas são?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body{
-        
-        background-repeat: no-repeat;
-        height: 96vh;
 
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }
-    h1{
-        text-align: center;
-        color: white;
-
-        text-shadow: 2px 0px 6px rgba(0, 0, 0, 0.357);
-    }
-
-    div#elementos{
-        
-        background-color: white;
-        
-        display: block;
-        width: 450px;
-
-        margin: auto;
-        padding: 10px 0px;
-        padding-bottom: 25px;
-
-        text-align: center;
-        border-radius: 10px;
-
-        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.526);
-    }
-    
-    
-
-    div#imagem{
-        
-
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: auto;
-
-        box-shadow: inset 3px 5px 7px rgba(0, 0, 0, 0.405);
-        
-    }
-    p#nome{
-        text-align: center;
-        color: white;
-
-        font-size: 10pt;
-    }
- 
-
-</style>
 <body onload="initTime()">
     
-        <h1>Hora do dia</h1>
+        <header>
+            <h1>Hora do dia</h1>
+        </header>
 
-        <div id="elementos">           
-            <div>
-                <p id="txthora"></p>
-                <div id="imagem"></div>
-            </div>
-        </div>
-        <p id="nome">@EliasMoreiraDev</p>
+        <section id="elementos">                    
+                    <p id="txthora"></p>
+                    <div id="imagem"></div>        
+        </section>
+
+        <footer>
+            <p id="nome">@EliasMoreiraDev</p>
+        </footer>
     
 
-    <script>
-        
-        
-        var fundo = window.document.querySelector('body')
-        var txthora = document.getElementById('txthora')
-        var img = document.getElementById('imagem')
-
-        function horas(){
-            var agora = new Date()
-            let hora = agora.getHours()
-            let min =  agora.getMinutes()
-            let sec = agora.getSeconds()
-
-            txthora.innerHTML = `Agora são ${hora}:${min}:${sec} `
-
-            if(hora>1 && hora<12){
-                fundo.style.background = 'linear-gradient(to top, #8E1F02, #DFC270)'
-                img.style.background = 'url(imagens/manhã.jpg) center center no-repeat'
-                img.style.backgroundSize = 'cover'
-            }
-
-            if(hora >= 12 && hora < 18){               
-                fundo.style.background = 'linear-gradient(to top, #290E06, #762B23)'
-                img.style.background = 'url(imagens/tarde.jpg) center center no-repeat'
-                img.style.backgroundSize = 'cover'
-            }
-
-            if(hora >= 18 && hora < 24){
-                fundo.style.background = 'linear-gradient(to top, #040E16, #2C4B85)'
-                img.style.background = 'url(imagens/noite.jpg) center center no-repeat'
-                img.style.backgroundSize = 'cover'
-            }
-        }
-        function initTime(){
-            setInterval(horas,1000);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
