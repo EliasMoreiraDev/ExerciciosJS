@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <label for="ano">Ano de Nascimento: </label>
+        <input type="number" name="ano" id="ano">
+
+        <label for="sxmas">Masculino</label>
+        <input type="radio" name="sexo" id="sxmas">
+
+        <label for="sxfem">Feminino</label>
+        <input type="radio" name="sexo" id="sxfem"><br>
+
+        <input type="submit" value="Verificar" onclick="verificar()">
+
+        <div id="res">Prencha os dados acima para ver o resultado!</div>
+        <div id="imagem"></div>
+        
+    </main>
+    <footer>
+        <p>&copy;EliasMoreiraDev</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
