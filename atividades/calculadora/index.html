@@ -12,17 +12,17 @@
         <h1>Calculadora</h1>
     </header>
     <section>
-        <div>
-            
+        <div id="display">
             <p name="res" id="res"></p>
-            
+ 
         </div>
-        <div id="calc">              
-                <button onclick="limpar()">C</button>
-                <button onclick="adicionar('x')">x</button>
-                <button onclick="adicionar('÷')">÷</button>
-
                 
+        <div id="calc">              
+                  <p>
+                    <button onclick="limpar()">C</button>
+                    <button onclick="adicionar('x')">x</button>
+                <button onclick="adicionar('/')">÷</button>
+                  </p>
                 
                     <p>
                         <button class="botao" onclick="adicionar(1)">1</button>
@@ -42,16 +42,13 @@
                         <button class="botao" onclick="adicionar(7)">7</button>
                         <button class="botao" onclick="adicionar(8)">8</button>
                         <button class="botao" onclick="adicionar(9)">9</button>
-                        <button id="igual" onclick="calcular()">=</button>
+                        <button onclick="adicionar('.')">.</button>
                     </p>
                 
                 <button id="zero" onclick="adicionar('0')">0</button>
                 
-
-                
-            
-                
-            
+                <button id="igual" onclick="calcular()">=</button>
+                 
         </div>
     </section>
     <footer>&copy;EliasMoreiraDev</footer>
