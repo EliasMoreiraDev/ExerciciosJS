@@ -11,41 +11,45 @@
     <header>
         <h1>Jogo da Velha</h1>
     </header>
-    <section>
 
+    <section id="telareiniciar">
+        <p id="xvencedor"> ❌ Vencedor </p>
+        <p id="ovencedor"> ⭕ Vencedor</p>
+        <button id="botaoreinicio" onclick="recomecar()">Jogar novamente</button>
+    </section>
+    <section id="telajogo">
 
-        <p id="titulo"></p>
             
-        <div class="botao" onclick="casa(1)">
-            <p id="jogada1"></p>
+        <div  id="jogada1" class="botao" onclick="casa(1)">
+            
         </div>
-        <div class="botao" onclick="casa(2)">
-            <p id="jogada2"></p>
+        <div  id="jogada2" class="botao" onclick="casa(2)">
+            
         </div>
-        <div class="botao" onclick="casa(3)">
-            <p id="jogada3" src=""></p>
+        <div id="jogada3" class="botao" onclick="casa(3)">
+            
         </div>
     
-        <div class="botao" onclick="casa(4)">
-            <p id="jogada4"></p>
+        <div id="jogada4" class="botao" onclick="casa(4)">
+            
         </div>
-        <div class="botao" onclick="casa(5)">
-            <p id="jogada5"></p>
+        <div id="jogada5" class="botao" onclick="casa(5)">
+            
         </div>
-        <div class="botao" onclick="casa(6)">
-            <p id="jogada6"></p>
+        <div id="jogada6" class="botao" onclick="casa(6)">
+            
         </div>
         
-        <div class="botao" onclick="casa(7)">
-            <p id="jogada7"></p>
-        </div>
-        <div class="botao" onclick="casa(8)">
-            <p id="jogada8"></p>
-        </div>
-        <div class="botao" onclick="casa(9)">
-            <p id="jogada9"></p>
-        </div>
+        <div id="jogada7" class="botao" onclick="casa(7)">
             
+        </div>
+        <div id="jogada8" class="botao" onclick="casa(8)">
+            
+        </div>
+        <div id="jogada9" class="botao" onclick="casa(9)">
+            
+        </div>
+        <button id="reinicio" onclick="recomecar()">Recomeçar</button>
     
         
     </section>

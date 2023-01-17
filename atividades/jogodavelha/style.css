@@ -14,7 +14,54 @@ header>h1{
     text-align: center;
     margin: 20px 0px;
 }
-section{
+#telareiniciar{
+    position: relative;
+    display: none;
+    background-color: white;
+    width: 350px;
+    height: 320px;
+
+    margin: auto;
+    padding: 50px;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+#xvencedor, #ovencedor{
+    font-size: 46pt;
+    text-align: center;
+
+}
+#botaoreinicio{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: green;
+    color: white;
+
+    border: 3px solid rgb(0, 54, 2);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20pt;
+    width: 300px;
+}
+#reinicio{
+    
+    background-color: rgb(174, 3, 3);
+    color: white;
+    margin-left: 115px;
+    margin-top: 10px;
+    
+    border: 3px solid rgb(55, 1, 1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+    width: 110px;
+}
+
+#telajogo{
     background-color: white;
     width: 350px;
    
@@ -32,8 +79,8 @@ div.botao{
 
     border: 1px solid black;
 
-    margin-right: -4px;
-    margin-bottom: -4px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     margin-top: 0px;
     padding: 0px;
 
@@ -43,6 +90,7 @@ div.botao{
 
 
 footer{
+    margin-top: 5px;
     color: white;
     text-align: center;
     font-size: 12pt;
